@@ -76,10 +76,10 @@ def inserir_dados_mongo(response_json):
 # Configurações e execução
 if __name__ == "__main__":
     # Configurações dos parâmetros, use variáveis de ambiente para segurança
-    login_email = os.getenv("ENEL_LOGIN_EMAIL", "ronaldooliveira82@hotmail.com")
-    login_senha = os.getenv("ENEL_LOGIN_SENHA", "Le140724@")
-    instalacao = "0126175314"
-    token = os.getenv("INFOSIMPLES_TOKEN", "FPv41P4tUPjwcy4Lm7awfOLwL70TEY7e_wRXLm-4")
+    login_email = os.getenv("ENEL_LOGIN_EMAIL", "seu_email_enel")
+    login_senha = os.getenv("ENEL_LOGIN_SENHA", "aua_senha_enel")
+    instalacao = "seu_numero_instalacao_enel"
+    token = os.getenv("INFOSIMPLES_TOKEN", "seun_token_infosimples")
 
     # Executando a consulta e exibindo o resultado
     response_json = consultar_contas_enel(login_email, login_senha, instalacao, token)
